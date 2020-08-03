@@ -36,18 +36,18 @@ Then update the train/val/test list paths in the config files.
 + Download the ImageNet pretrained [**backbones**](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155122171_link_cuhk_edu_hk/EQEY0JxITwVHisdVzusEqNUBNsf1CT8MsALdahUhaHrhlw?e=4%3a2o3XTL&at=9) and put them into the `initmodel` directory.
 + Then execute the command: 
 
-    `sh test_PFENet.sh {*dataset*} {*model_config*}`
+    `sh test.sh {*dataset*} {*model_config*}`
 
 Example: Test PFENet with ResNet50 on the split 0 of PASCAL-5i: 
 
-    sh test_PFENet.sh pascal split0_resnet50
+    sh test.sh pascal split0_resnet50
 
 
 ### Train
 
 Execute this command at the root directory: 
 
-    sh train_PFENet.sh {*dataset*} {*model_config*}
+    sh train.sh {*dataset*} {*model_config*}
 
 
 ## Related Repositories
