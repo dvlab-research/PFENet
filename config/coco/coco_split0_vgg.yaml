@@ -1,0 +1,62 @@
+DATA:
+  data_root: 
+  train_list: 
+  val_list: 
+  classes: 2
+
+TRAIN:
+  layers: 101 # 50 or 101
+  sync_bn: False
+  train_h: 641
+  train_w: 641
+  val_size: 641  
+  scale_min: 0.8  # minimum random scale
+  scale_max: 1.25 # maximum random scale
+  rotate_min: -10  # minimum random rotate
+  rotate_max: 10  # maximum random rotate
+  zoom_factor: 8  # zoom factor for final prediction during training, be in [1, 2, 4, 8]
+  ignore_label: 255
+  padding_label: 255
+  aux_weight: 1.0
+  train_gpu: [0,1,2,3]  # If only one gpu is used, batch size can be set to 8 and base_lr should be 0.005.
+  workers: 16  # data loader workers
+  batch_size: 32  # batch size for training. 
+  batch_size_val: 1 # this version of code only support val batch = 1
+  base_lr: 0.02
+  epochs: 50
+  start_epoch: 0
+  power: 0.9 # 0 means no decay
+  momentum: 0.9
+  weight_decay: 0.0001
+  manual_seed: 321
+  print_freq: 5
+  save_freq: 20
+  save_path: exp/coco/split0_vgg/model
+  weight:  
+  resume:  # path to latest checkpoint (default: none)
+  evaluate: True
+  split: 0
+  shot: 1 
+  vgg: True  # whether to use vgg as the backbone
+  ppm_scales: [1.0, 0.5, 0.25, 0.125]
+  fix_random_seed_val: True
+  warmup: False
+  use_coco: True
+  use_split_coco: True
+  resized_val: True
+  ori_resize: True  # use original label for evaluation
+
+## deprecated multi-processing training
+Distributed:
+  dist_url: tcp://127.0.0.1:6789
+  dist_backend: 'nccl'
+  multiprocessing_distributed: False
+  world_size: 1
+  rank: 0
+  use_apex: False
+  opt_level: 'O0'
+  keep_batchnorm_fp32:
+  loss_scale:
+
+
+
