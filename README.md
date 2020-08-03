@@ -1,7 +1,7 @@
-## PFENet
+# PFENet
 This is the implementation of our paper **PFENet: Prior Guided Feature Enrichment Network for Few-shot Segmentation** that has been accepted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).
 
-## Get Started
+# Get Started
 
 ### Environment
 + torch==1.4.0 (torch version >= 1.0.1.post2 should be okay to run this repo)
@@ -50,7 +50,7 @@ Execute this command at the root directory:
     sh train.sh {*dataset*} {*model_config*}
 
 
-## Related Repositories
+# Related Repositories
 
 This project is built upon a very early version of **SemSeg**: https://github.com/hszhao/semseg. 
 
@@ -67,7 +67,7 @@ Other projects in few-shot segmentation:
 
 Many thanks to their greak work!
 
-## Citation
+# Citation
 
 If you find this project useful, please consider citing:
 ```
