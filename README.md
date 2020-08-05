@@ -1,5 +1,5 @@
 # PFENet
-This is the implementation of our paper **PFENet: Prior Guided Feature Enrichment Network for Few-shot Segmentation** that has been accepted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).
+This is the implementation of our paper **PFENet: Prior Guided Feature Enrichment Network for Few-shot Segmentation** that has been accepted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI). Paper is available at [**arXiv**](http://arxiv.org/abs/2008.01449)
 
 # Get Started
 
