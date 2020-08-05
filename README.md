@@ -14,7 +14,7 @@ This is the implementation of our paper [**PFENet: Prior Guided Feature Enrichme
 
 Please download the following datasets:
 
-+ PASCAL-5i is based on the [**PASCAL VOC 2012**](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) and [**SBD**](http://home.bharathh.info/pubs/codes/SBD/download.html) where the val images should be excluded.
++ PASCAL-5i is based on the [**PASCAL VOC 2012**](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) and [**SBD**](http://home.bharathh.info/pubs/codes/SBD/download.html) where the val images should be excluded from training.
 
 + [**COCO 2014**](https://cocodataset.org/#download).
 
