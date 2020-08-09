@@ -1,7 +1,7 @@
-## PFENet
-This is the implementation of our paper **PFENet: Prior Guided Feature Enrichment Network for Few-shot Segmentation** that has been accepted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).
+# PFENet
+This is the implementation of our paper [**PFENet: Prior Guided Feature Enrichment Network for Few-shot Segmentation**](http://arxiv.org/abs/2008.01449) that has been accepted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI). 
 
-## Get Started
+# Get Started
 
 ### Environment
 + torch==1.4.0 (torch version >= 1.0.1.post2 should be okay to run this repo)
@@ -12,20 +12,18 @@ This is the implementation of our paper **PFENet: Prior Guided Feature Enrichmen
 
 ### Datasets and Data Preparation
 
-+ PASCAL-5i is based on the PASCAL VOC 2012 (http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) and SBD (http://home.bharathh.info/pubs/codes/SBD/download.html) where the val images should be excluded.
+Please download the following datasets:
 
-+ COCO: https://cocodataset.org/#download.
++ PASCAL-5i is based on the [**PASCAL VOC 2012**](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) and [**SBD**](http://home.bharathh.info/pubs/codes/SBD/download.html) where the val images should be excluded from the list of training samples.
+
++ [**COCO 2014**](https://cocodataset.org/#download).
 
 This code reads data from .txt files where each line contains the paths for image and the correcponding label respectively. Image and label paths are seperated by a space. Example is as follows:
 
     image_path_1 label_path_1
-
     image_path_2 label_path_2
-    
     image_path_3 label_path_3
-    
     ...
-    
     image_path_n label_path_n
 
 Then update the train/val/test list paths in the config files.
@@ -38,21 +36,21 @@ Then update the train/val/test list paths in the config files.
 + Download the ImageNet pretrained [**backbones**](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155122171_link_cuhk_edu_hk/EQEY0JxITwVHisdVzusEqNUBNsf1CT8MsALdahUhaHrhlw?e=4%3a2o3XTL&at=9) and put them into the `initmodel` directory.
 + Then execute the command: 
 
-    `sh test_PFENet.sh {*dataset*} {*model_config*}`
+    `sh test.sh {*dataset*} {*model_config*}`
 
 Example: Test PFENet with ResNet50 on the split 0 of PASCAL-5i: 
 
-    sh test_PFENet.sh pascal split0_resnet50
+    sh test.sh pascal split0_resnet50
 
 
 ### Train
 
 Execute this command at the root directory: 
 
-    sh train_PFENet.sh {*dataset*} {*model_config*}
+    sh train.sh {*dataset*} {*model_config*}
 
 
-## Related Repositories
+# Related Repositories
 
 This project is built upon a very early version of **SemSeg**: https://github.com/hszhao/semseg. 
 
@@ -69,7 +67,7 @@ Other projects in few-shot segmentation:
 
 Many thanks to their greak work!
 
-## Citation
+# Citation
 
 If you find this project useful, please consider citing:
 ```
