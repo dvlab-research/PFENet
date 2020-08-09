@@ -35,7 +35,7 @@ Then update the train/val/test list paths in the config files.
 
 ##### To get voc_sbd_merge_noduplicate.txt:
 + we first merge the original VOC (voc_original_train.txt) and SBD ([**sbd_data.txt**](http://home.bharathh.info/pubs/codes/SBD/train_noval.txt)) training data. 
-+ The merged list (voc_sbd_merge.txt) is then processed by the script (duplicate_removel.py) to remove the duplicate images and labels.
++ The merged list (voc_sbd_merge.txt) is then processed by the script (duplicate_removal.py) to remove the duplicate images and labels.
 
 ### Run Demo / Test with Pretrained Models
 + Please download the pretrained models.
