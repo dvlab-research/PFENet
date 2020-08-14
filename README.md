@@ -30,7 +30,7 @@ Then update the train/val/test list paths in the config files.
 
 #### [Update] We have uploaded the lists we use in our paper.
 + The train/val lists for COCO contain 82081 and 40137 images respectively. They are the default train/val splits of COCO. 
-+ The train/val lists for PASCAL5i contain 5953 and 1449 images respectively. The train list should be **voc_sbd_merge_noduplicate.txt** and the val list is the original val list of pascal voc (**val_fixed.txt**).
++ The train/val lists for PASCAL5i contain 5953 and 1449 images respectively. The train list should be **voc_sbd_merge_noduplicate.txt** and the val list is the original val list of pascal voc (**val.txt**).
 
 ##### To get voc_sbd_merge_noduplicate.txt:
 + We first merge the original VOC (voc_original_train.txt) and SBD ([**sbd_data.txt**](http://home.bharathh.info/pubs/codes/SBD/train_noval.txt)) training data. 
