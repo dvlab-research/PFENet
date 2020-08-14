@@ -28,6 +28,15 @@ This code reads data from .txt files where each line contains the paths for imag
 
 Then update the train/val/test list paths in the config files.
 
+#### [Update] We have uploaded the lists we use in our paper.
++ The train/val lists for COCO contain 82081 and 40137 images respectively. They are the default train/val splits of COCO. 
++ The train/val lists for PASCAL5i contain 5953 and 1449 images respectively. The train list should be **voc_sbd_merge_noduplicate.txt** and the val list is the original val list of pascal voc (**val_fixed.txt**).
+
+##### To get voc_sbd_merge_noduplicate.txt:
++ We first merge the original VOC (voc_original_train.txt) and SBD ([**sbd_data.txt**](http://home.bharathh.info/pubs/codes/SBD/train_noval.txt)) training data. 
++ [**Important**] sbd_data.txt does not overlap with the PASCALVOC 2012 validation data.
++ The merged list (voc_sbd_merge.txt) is then processed by the script (duplicate_removal.py) to remove the duplicate images and labels.
+
 ### Run Demo / Test with Pretrained Models
 + Please download the pretrained models.
 + We provide **8 pre-trained models**: 4 ResNet-50 based [**models**](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155122171_link_cuhk_edu_hk/EW20i_eiTINDgJDqUqikNR4Bo-7kVFkLBkxGZ2_uorOJcw?e=4%3aSIRlwD&at=9) for PASCAL-5i and 4 VGG-16 based [**models**](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155122171_link_cuhk_edu_hk/EYS498D4TOZMtIb3WbQDGSQBsqxJHLSiMEAa49Iym0NO0A?e=4%3apRTPnj&at=9) for COCO.
@@ -72,7 +81,7 @@ Many thanks to their greak work!
 If you find this project useful, please consider citing:
 ```
 @article{tian2020pfenet,
-  title={Prior Guided Feature Enrichment Netowkr for Few-Shot Segmentation},
+  title={Prior Guided Feature Enrichment Network for Few-Shot Segmentation},
   author={Tian, Zhuotao and Zhao, Hengshuang and Shu, Michelle and Yang, Zhicheng and Li, Ruiyu and Jia, Jiaya},
   journal={TPAMI},
   year={2020}
