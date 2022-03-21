@@ -80,16 +80,10 @@ Many thanks to their greak work!
 
 If you find this project useful, please consider citing:
 ```
-@InProceedings{tian2020pfenet,
-    title={Generalized Few-shot Semantic Segmentation},
-    author    = {Zhuotao Tian and
-               Xin Lai and
-               Li Jiang and
-               Shu Liu and               
-               Michelle Shu and
-               Hengshuang Zhao and
-               Jiaya Jia},
-    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2022}
+@article{tian2020pfenet,
+  title={Prior Guided Feature Enrichment Network for Few-Shot Segmentation},
+  author={Tian, Zhuotao and Zhao, Hengshuang and Shu, Michelle and Yang, Zhicheng and Li, Ruiyu and Jia, Jiaya},
+  journal={TPAMI},
+  year={2020}
 }
 ```
