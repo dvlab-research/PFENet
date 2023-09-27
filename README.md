@@ -16,6 +16,12 @@ Please download the following datasets:
 
 + PASCAL-5i is based on the [**PASCAL VOC 2012**](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) and [**SBD**](http://home.bharathh.info/pubs/codes/SBD/download.html) where the val images should be excluded from the list of training samples.
 
+Images are available at: http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
+
+annotations: https://drive.google.com/file/d/1ikrDlsai5QSf2GiSUR3f8PZUzyTubcuF/view?usp=sharing
+
+Note: If you wish to reproduce the results presented in the paper, please follow the provided [**datalist**](https://github.com/dvlab-research/PFENet/tree/master/lists) to use the specified data. As we followed Shaban's OSLSM work, we only utilized a subset of the complete dataset, which is not the entire 12,000 entries. However, different studies may have different usage requirements. To ensure fair comparison, we kindly request you to select the data according to your specific needs.
+
 + [**COCO 2014**](https://cocodataset.org/#download).
 
 This code reads data from .txt files where each line contains the paths for image and the correcponding label respectively. Image and label paths are seperated by a space. Example is as follows:
