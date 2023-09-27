@@ -1,6 +1,13 @@
 # PFENet
 This is the implementation of our paper [**PFENet: Prior Guided Feature Enrichment Network for Few-shot Segmentation**](http://arxiv.org/abs/2008.01449) that has been accepted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI). 
 
+### Pinned
+Our latest works are available at:
+
+Hierarchical Dense Correlation Distillation for Few-Shot Segmentation (CVPR 2023): https://github.com/Pbihao/HDMNet.
+
+Generalized Few-shot Semantic Segmentation (CVPR 2022): https://github.com/dvlab-research/GFS-Seg.
+
 # Get Started
 
 ### Environment
@@ -91,5 +98,19 @@ If you find this project useful, please consider citing:
   author={Tian, Zhuotao and Zhao, Hengshuang and Shu, Michelle and Yang, Zhicheng and Li, Ruiyu and Jia, Jiaya},
   journal={TPAMI},
   year={2020}
+}
+
+@InProceedings{peng2023hierarchical,
+  title={Hierarchical Dense Correlation Distillation for Few-Shot Segmentation},
+  author={Peng, Bohao and Tian, Zhuotao and Wu, Xiaoyang and Wang, Chenyao and Liu, Shu and Su, Jingyong and Jia, Jiaya},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2023}
+}
+
+@InProceedings{tian2022gfsseg,
+    title={Generalized Few-shot Semantic Segmentation},
+    author={Zhuotao Tian and Xin Lai and Li Jiang and Shu Liu and Michelle Shu and Hengshuang Zhao and Jiaya Jia},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2022}
 }
 ```
