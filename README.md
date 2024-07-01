@@ -52,7 +52,7 @@ Then update the train/val/test list paths in the config files.
 
 ### Run Demo / Test with Pretrained Models
 + Please download the pretrained models.
-+ We provide **8 pre-trained models**: 4 ResNet-50 based [**models**](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155122171_link_cuhk_edu_hk/EW20i_eiTINDgJDqUqikNR4Bo-7kVFkLBkxGZ2_uorOJcw?e=4%3aSIRlwD&at=9) for PASCAL-5i and 4 VGG-16 based [**models**](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155122171_link_cuhk_edu_hk/EYS498D4TOZMtIb3WbQDGSQBsqxJHLSiMEAa49Iym0NO0A?e=4%3apRTPnj&at=9) for COCO.
++ We provide **8 pre-trained models**: 4 ResNet-50 based [**models**](https://1drv.ms/u/c/af3d5d777523123a/EU_IQ0BZn0lErngawUbZ3UIBhYuJ1F8DJMoacP1zPJ-Hlg?e=mIKR0n) for PASCAL-5i and 4 VGG-16 based [**models**](https://1drv.ms/u/c/af3d5d777523123a/EU_IQ0BZn0lErngawUbZ3UIBhYuJ1F8DJMoacP1zPJ-Hlg?e=mIKR0n) for COCO.
 + Update the config file by specifying the target **split** and **path** (`weights`) for loading the checkpoint.
 + Execute `mkdir initmodel` at the root directory.
 + Download the ImageNet pretrained [**backbones**](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155122171_link_cuhk_edu_hk/EQEY0JxITwVHisdVzusEqNUBNsf1CT8MsALdahUhaHrhlw?e=4%3a2o3XTL&at=9) and put them into the `initmodel` directory.
